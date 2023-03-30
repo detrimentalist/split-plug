@@ -1,0 +1,15 @@
+[package]
+name = "split-plug"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+clap-sys = "0.3.0"
+vj3 = { path = "../vj3" }
+clack-plugin = { git = "https://github.com/prokopyl/clack.git", rev = "a1334ca" }
+clack-extensions = {  git = "https://github.com/prokopyl/clack.git", rev = "a1334ca", features = ["audio-ports", "params", "state", "clack-plugin", "clack-host", "log"] }
+#clack-plugin = { path = "../clack-main/plugin" }
+#clack-extensions = { path = "../clack-main/extensions", features = ["audio-ports", "params", "state", "clack-plugin", "clack-host", "log"] }

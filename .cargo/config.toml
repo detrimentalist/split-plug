@@ -1,0 +1,6 @@
+[alias]
+xtask = "run --manifest-path ./xtask/Cargo.toml --"
+
+[env]
+NAME = "asd"
+PARAMS = "2,3,4"
